@@ -2,12 +2,13 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
+import Image from 'next/image'
 import SectionWrapper from './SectionWrapper'
 
 const projects = [
-  { tier: 'Transformation — E-Commerce', name: 'KNGDM MVMT — Meal Prep & Delivery' },
-  { tier: 'Growth — Service Business', name: 'XVI — Christian Singles Dining' },
-  { tier: 'Foundation — Service Business', name: 'DG on the Move — Moving Company' },
+  { tier: 'Transformation — E-Commerce', name: 'KNGDM MVMT — Meal Prep & Delivery', img: '/images/portfolio-kngdm.png', position: 'center top' },
+  { tier: 'Growth — Service Business', name: 'XVI — Christian Singles Dining', img: '/images/portfolio-xvi.png', position: 'center top' },
+  { tier: 'Foundation — Service Business', name: 'DG on the Go Movers — Daniel Graafsma', img: '/images/portfolio-dg.png', position: 'center top' },
 ]
 
 function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay: number }) {
@@ -28,19 +29,19 @@ function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay:
       <div style={{
         height: '175px',
         background: '#111',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: '9px',
-        letterSpacing: '0.2em',
-        textTransform: 'uppercase',
-        color: '#333',
+        position: 'relative',
+        overflow: 'hidden',
         transition: 'opacity 0.2s',
         opacity: hovered ? 0.75 : 1,
-        borderBottom: '1px solid #1c1c1c',
-        fontFamily: 'var(--font-body)',
+        borderBottom: '1px solid #eee',
       }}>
-        [ screenshot ]
+        <Image
+          src={project.img}
+          alt={project.name}
+          fill
+          style={{ objectFit: 'cover', objectPosition: project.position }}
+          sizes="33vw"
+        />
       </div>
       <div style={{
         fontSize: '11px',

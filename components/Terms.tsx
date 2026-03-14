@@ -6,7 +6,7 @@ import SectionWrapper from './SectionWrapper'
 
 const terms = [
   {
-    pct: '50%',
+    pct: '25%',
     desc: 'Deposit required before any work begins — after our exploratory call and written agreement on scope.',
   },
   {
@@ -14,7 +14,7 @@ const terms = [
     desc: 'At the midpoint milestone — after the first stage is reviewed, revised, and approved by you.',
   },
   {
-    pct: '25%',
+    pct: '50%',
     desc: 'Final payment before handover — after full project approval and before transferring files and access.',
   },
 ]

@@ -5,9 +5,9 @@ import { useRef } from 'react'
 import SectionWrapper from './SectionWrapper'
 
 const reviews = [
-  { text: 'Placeholder — replace with real testimonial from KNGDM MVMT client.', attr: '— Client Name, KNGDM MVMT' },
+  { text: 'Placeholder — replace with real testimonial from James Chapman, KNGDM MVMT.', attr: '— James Chapman, KNGDM MVMT' },
   { text: 'Placeholder — replace with real testimonial from Wendell Bowdre, XVI.', attr: '— Wendell Bowdre, XVI' },
-  { text: 'Placeholder — replace with real testimonial from DG on the Move client.', attr: '— Client Name, DG on the Move' },
+  { text: 'Placeholder — replace with real testimonial from Daniel Graafsma, DG on the Go Movers.', attr: '— Daniel Graafsma, DG on the Go Movers' },
   { text: 'Placeholder — replace with real testimonial from Renee, Portugal Group Trip.', attr: '— Renee, Portugal Group Trip' },
 ]
 

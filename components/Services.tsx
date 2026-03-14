@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 import SectionWrapper from './SectionWrapper'
 
 function AnimateIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -24,17 +25,38 @@ export default function Services() {
   return (
     <SectionWrapper label="How can I help" id="services" style={{ background: 'var(--color-white)', borderTop: '1px solid #eee' }}>
       <AnimateIn>
-        <p style={{
-          fontFamily: 'var(--font-body)',
-          fontSize: 'var(--text-h2)',
-          fontWeight: 300,
-          color: '#111',
-          maxWidth: '620px',
-          lineHeight: 1.45,
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: '3fr 2fr',
+          gap: '3rem',
+          alignItems: 'center',
           marginBottom: '3rem',
         }}>
-          I help business owners translate what they actually need into digital products that work — with AI built in from the start, not bolted on at the end.
-        </p>
+          <p style={{
+            fontFamily: 'var(--font-body)',
+            fontSize: 'var(--text-h2)',
+            fontWeight: 300,
+            color: '#111',
+            lineHeight: 1.45,
+            margin: 0,
+          }}>
+            I help business owners translate what they actually need into digital products that work — with AI built in from the start, not bolted on at the end.
+          </p>
+
+          <div style={{
+            position: 'relative',
+            aspectRatio: '3 / 4',
+            overflow: 'hidden',
+          }}>
+            <Image
+              src="/images/rashad-forest.png"
+              alt="Rashad Sternes in a forest"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+        </div>
       </AnimateIn>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>
