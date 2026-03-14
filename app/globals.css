@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;1,9..144,200&family=DM+Sans:wght@300;400&family=DM+Mono:wght@400&display=swap');
+
+:root {
+  --color-black:        #000000;
+  --color-near-black:   #0a0a0a;
+  --color-dark:         #111111;
+  --color-dark-mid:     #0d0d0d;
+  --color-white:        #ffffff;
+  --color-off-white:    #f8f8f8;
+  --color-gray-light:   #f2f2f2;
+  --color-border:       #e0e0e0;
+  --color-border-dark:  #dddddd;
+  --color-border-subtle:#f0f0f0;
+  --color-border-black: #1c1c1c;
+  --color-border-void:  #222222;
+  --color-text-primary:   #111111;
+  --color-text-secondary: #444444;
+  --color-text-muted:     #777777;
+  --color-text-faint:     #999999;
+  --color-text-ghost:     #bbbbbb;
+  --color-text-whisper:   #cccccc;
+  --color-text-on-dark:         #ffffff;
+  --color-text-on-dark-dim:     #888888;
+  --color-text-on-dark-muted:   #555555;
+  --color-text-on-dark-ghost:   #444444;
+  --color-text-on-dark-void:    #333333;
+  --color-label-light:  #cccccc;
+  --color-label-dark:   #333333;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'DM Sans', Helvetica, Arial, sans-serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+  --text-hero:      clamp(2.75rem, 7vw, 5.5rem);
+  --text-h2:        clamp(1rem, 2vw, 1.35rem);
+  --text-skills-hl: clamp(1.75rem, 4vw, 3rem);
+  --text-price:     clamp(2.25rem, 4vw, 3.25rem);
+  --text-stat:      2.75rem;
+  --text-term-pct:  3.5rem;
+  --text-body:      0.9375rem;
+  --text-small:     0.8125rem;
+  --text-xs:        0.75rem;
+  --text-xxs:       0.6875rem;
+  --text-label:     0.5625rem;
+  --text-micro:     0.5rem;
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-thin:    200;
+  --tracking-label:   0.4em;
+  --tracking-eyebrow: 0.25em;
+  --tracking-nav:     0.35em;
+  --tracking-button:  0.2em;
+  --tracking-caption: 0.15em;
+  --tracking-micro:   0.12em;
+  --leading-tight:    1.08;
+  --leading-snug:     1.15;
+  --leading-normal:   1.45;
+  --leading-relaxed:  1.6;
+  --leading-loose:    1.65;
+  --leading-airy:     1.75;
+  --padding-section:       4rem 3rem 4rem 2.5rem;
+  --padding-section-full:  4rem 2.5rem;
+  --padding-nav:           1.1rem 2.5rem;
+  --padding-footer:        1.75rem 2.5rem;
+  --padding-llm:           3.5rem 2.5rem;
+  --padding-values:        5rem 2.5rem;
+  --label-column-width:    3.5rem;
+  --form-max-width:        580px;
+  --intro-max-width:       620px;
+  --border-standard:  1px solid var(--color-border);
+  --border-dark:      1px solid var(--color-border-dark);
+  --border-subtle:    1px solid var(--color-border-subtle);
+  --border-void:      1px solid var(--color-border-black);
+  --border-dark-void: 1px solid var(--color-border-void);
+  --duration-fast:    0.2s;
+  --duration-normal:  0.4s;
+  --duration-slow:    0.85s;
+  --duration-skill:   1.2s;
+  --ease-out:         cubic-bezier(0.4, 0, 0.2, 1);
+  --skill-bar-height: 5px;
+  --skill-bar-bg:     #f0f0f0;
+  --skill-bar-fill:   linear-gradient(90deg, #111111, #999999);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--color-text-primary);
+  background: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Section wrapper layout */
+.section-wrapper {
+  display: flex;
+}
+
+.section-label-col {
+  width: var(--label-column-width);
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 3rem;
+  border-right: 1px solid var(--color-border-subtle);
+}
+
+.section-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-label-light);
+  padding: 0 1rem;
+}
+
+.section-body {
+  flex: 1;
+  padding: var(--padding-section);
+}
