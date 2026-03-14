@@ -50,11 +50,7 @@ export default function Pricing() {
         initial={{ y: 18, opacity: 0 }}
         animate={inView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.85, ease: 'easeOut', delay: 0.1 }}
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          borderTop: '1px solid #ddd',
-        }}
+        className="pricing-grid"
       >
         {tiers.map((tier, i) => (
           <div

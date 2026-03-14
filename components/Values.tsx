@@ -42,13 +42,7 @@ export default function Values() {
       />
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.6)' }} />
 
-      <div ref={ref} style={{
-        position: 'relative',
-        zIndex: 2,
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '3rem',
-      }}>
+      <div ref={ref} className="values-grid" style={{ position: 'relative', zIndex: 2 }}>
         {values.map((val, i) => (
           <motion.div
             key={val.n}

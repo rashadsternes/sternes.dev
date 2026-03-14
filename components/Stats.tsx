@@ -22,12 +22,7 @@ export default function Stats() {
         initial={{ y: 18, opacity: 0 }}
         animate={inView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.85, ease: 'easeOut' }}
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '1px',
-          background: '#1c1c1c',
-        }}
+        className="stats-grid"
       >
         {stats.map((stat, i) => (
           <div
@@ -49,7 +44,7 @@ export default function Stats() {
                   alt={stat.alt}
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
-                  sizes="25vw"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)' }} />
               </>

@@ -26,21 +26,21 @@ function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay:
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div style={{
-        height: '175px',
-        background: '#111',
-        position: 'relative',
-        overflow: 'hidden',
-        transition: 'opacity 0.2s',
-        opacity: hovered ? 0.75 : 1,
-        borderBottom: '1px solid #eee',
-      }}>
+      <div
+        className="portfolio-thumb"
+        style={{
+          background: '#111',
+          transition: 'opacity 0.2s',
+          opacity: hovered ? 0.75 : 1,
+          borderBottom: '1px solid #eee',
+        }}
+      >
         <Image
           src={project.img}
           alt={project.name}
           fill
           style={{ objectFit: 'cover', objectPosition: project.position }}
-          sizes="33vw"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
       </div>
       <div style={{
@@ -68,7 +68,7 @@ function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay:
 export default function Portfolio() {
   return (
     <SectionWrapper label="Work" id="work" style={{ background: 'var(--color-white)', borderTop: '1px solid #eee' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, border: '1px solid #eee' }}>
+      <div className="portfolio-grid">
         {projects.map((project, i) => (
           <PortfolioItem key={i} project={project} delay={i * 0.1} />
         ))}

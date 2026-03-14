@@ -25,13 +25,17 @@ export default function Services() {
   return (
     <SectionWrapper label="How can I help" id="services" style={{ background: 'var(--color-white)', borderTop: '1px solid #eee' }}>
       <AnimateIn>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '3fr 2fr',
-          gap: '3rem',
-          alignItems: 'center',
-          marginBottom: '3rem',
-        }}>
+        <div className="services-intro-grid">
+          <div className="services-intro-photo">
+            <Image
+              src="/images/rashad-forest.png"
+              alt="Rashad Sternes in a forest"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              sizes="(max-width: 640px) 60vw, 28vw"
+            />
+          </div>
+
           <p style={{
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-h2)',
@@ -40,31 +44,14 @@ export default function Services() {
             lineHeight: 1.45,
             margin: 0,
           }}>
-            I help business owners translate what they actually need into digital products that work — with AI built in from the start, not bolted on at the end.
+            I help business owners translate what they actually need into digital products that work. With AI built in from the start, not bolted on at the end.
           </p>
-
-          <div style={{
-            position: 'relative',
-            aspectRatio: '3 / 4',
-            overflow: 'hidden',
-          }}>
-            <Image
-              src="/images/rashad-forest.png"
-              alt="Rashad Sternes in a forest"
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'center top' }}
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
         </div>
       </AnimateIn>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>
+      <div className="services-cards-grid">
         <AnimateIn delay={0.1}>
-          <div style={{
-            padding: '2rem 2rem 2.5rem 0',
-            borderTop: '1px solid var(--color-border)',
-          }}>
+          <div className="service-card">
             <div style={{ fontSize: '9px', color: '#bbb', letterSpacing: '0.2em', marginBottom: '0.75rem', fontFamily: 'var(--font-body)' }}>01</div>
             <div style={{ width: '148px', height: '1px', background: 'var(--color-border)', marginBottom: '1.25rem' }} />
             <div style={{ fontSize: '1.05rem', fontWeight: 400, marginBottom: '0.5rem', color: '#111', fontFamily: 'var(--font-body)' }}>Websites &amp; Web Apps</div>
@@ -75,11 +62,7 @@ export default function Services() {
         </AnimateIn>
 
         <AnimateIn delay={0.2}>
-          <div style={{
-            padding: '2rem 0 2.5rem 2rem',
-            borderTop: '1px solid var(--color-border)',
-            borderLeft: '1px solid var(--color-border)',
-          }}>
+          <div className="service-card--right">
             <div style={{ fontSize: '9px', color: '#bbb', letterSpacing: '0.2em', marginBottom: '0.75rem', fontFamily: 'var(--font-body)' }}>02</div>
             <div style={{ width: '148px', height: '1px', background: 'var(--color-border)', marginBottom: '1.25rem' }} />
             <div style={{ fontSize: '1.05rem', fontWeight: 400, marginBottom: '0.5rem', color: '#111', fontFamily: 'var(--font-body)' }}>AI Integration &amp; Transformation</div>

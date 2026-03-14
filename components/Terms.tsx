@@ -47,17 +47,13 @@ export default function Terms() {
         initial={{ y: 18, opacity: 0 }}
         animate={inView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.85, ease: 'easeOut', delay: 0.1 }}
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          borderTop: '1px solid #ddd',
-        }}
+        className="terms-grid"
       >
         {terms.map((term, i) => (
           <div
             key={i}
             style={{
-              padding: i === 1 ? '2rem 1.5rem' : i === 2 ? '2rem 0 2rem 1.5rem' : '2rem 1.5rem 2rem 0',
+              padding: '2rem 1.5rem',
               borderRight: i < 2 ? '1px solid #eee' : 'none',
             }}
           >

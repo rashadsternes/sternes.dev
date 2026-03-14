@@ -36,7 +36,7 @@ export default function Process() {
         The work process consists of several clear stages.
       </motion.p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0 }}>
+      <div className="process-grid">
         {steps.map((step, i) => (
           <motion.div
             key={step.n}

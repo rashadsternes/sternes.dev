@@ -17,7 +17,7 @@ export default function Reviews() {
 
   return (
     <SectionWrapper label="Reviews" style={{ background: 'var(--color-gray-light)', borderTop: '1px solid #eee' }}>
-      <div ref={ref} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+      <div ref={ref} className="reviews-grid">
         {reviews.map((review, i) => (
           <motion.div
             key={i}
