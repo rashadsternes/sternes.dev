@@ -11,11 +11,11 @@ const terms = [
   },
   {
     pct: '25%',
-    desc: 'At the midpoint milestone — after the first stage is reviewed, revised, and approved by you.',
+    desc: 'At the midpoint milestone, after the first stage is reviewed, revised, and approved by you.',
   },
   {
     pct: '50%',
-    desc: 'Final payment before handover — after full project approval and before transferring files and access.',
+    desc: 'Final payment before handover, after full project approval and before transferring files and access.',
   },
 ]
 
@@ -40,7 +40,7 @@ export default function Terms() {
           color: '#555',
         }}
       >
-        I work on a prepaid basis, divided into clear stages — no surprises, no scope creep.
+        I work on a prepaid basis, divided into clear stages. No surprises, no scope creep.
       </motion.p>
 
       <motion.div

@@ -43,7 +43,7 @@ export default function Pricing() {
           color: '#555',
         }}
       >
-        Three tiers built for different stages of a business — each one complete in itself.
+        Three tiers built for different stages of a business, each one complete in itself.
       </motion.p>
 
       <motion.div

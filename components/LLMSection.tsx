@@ -115,7 +115,7 @@ export default function LLMSection() {
             transition: 'opacity 0.3s',
             opacity: copied ? 1 : 0,
           }}>
-            Copied — paste into any AI assistant.
+            Copied. Paste into any AI assistant.
           </div>
         </motion.div>
       </div>

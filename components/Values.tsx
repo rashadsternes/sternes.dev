@@ -17,7 +17,7 @@ const values = [
   },
   {
     n: 'III',
-    title: "The future is here — your business should be too.",
+    title: "The future is here. Your business should be too.",
     desc: "AI is changing the playing field. I build so your business is positioned for what's coming, not catching up to it.",
   },
 ]

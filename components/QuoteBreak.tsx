@@ -55,7 +55,7 @@ export default function QuoteBreak() {
           lineHeight: 1.45,
           letterSpacing: '-0.01em',
         }}>
-          &ldquo;I focus on understanding what a business owner actually means — then building something durable enough to last.&rdquo;
+          &ldquo;I focus on understanding what a business owner actually means. Then building something durable enough to last.&rdquo;
         </p>
       </motion.div>
     </section>

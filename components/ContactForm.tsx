@@ -75,7 +75,7 @@ export default function ContactForm() {
             maxWidth: '580px',
           }}
         >
-          Thank you — I&apos;ll be in touch soon.
+          Thank you. I&apos;ll be in touch soon.
         </motion.div>
       ) : (
         <motion.form

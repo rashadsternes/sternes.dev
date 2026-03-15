@@ -56,7 +56,7 @@ export default function Services() {
             <div style={{ width: '148px', height: '1px', background: 'var(--color-border)', marginBottom: '1.25rem' }} />
             <div style={{ fontSize: '1.05rem', fontWeight: 400, marginBottom: '0.5rem', color: '#111', fontFamily: 'var(--font-body)' }}>Websites &amp; Web Apps</div>
             <div style={{ fontSize: '13px', color: '#777', fontWeight: 300, lineHeight: 1.65, fontFamily: 'var(--font-body)' }}>
-              From a clean service business site to full e-commerce with custom business logic — built on Next.js, Sanity CMS, and Stripe.
+              From a clean service business site to full e-commerce with custom business logic, built on Next.js, Sanity CMS, and Stripe.
             </div>
           </div>
         </AnimateIn>
@@ -67,7 +67,7 @@ export default function Services() {
             <div style={{ width: '148px', height: '1px', background: 'var(--color-border)', marginBottom: '1.25rem' }} />
             <div style={{ fontSize: '1.05rem', fontWeight: 400, marginBottom: '0.5rem', color: '#111', fontFamily: 'var(--font-body)' }}>AI Integration &amp; Transformation</div>
             <div style={{ fontSize: '13px', color: '#777', fontWeight: 300, lineHeight: 1.65, fontFamily: 'var(--font-body)' }}>
-              I don&apos;t just build with AI — I integrate it into your business workflows, customer touchpoints, and internal tools so you&apos;re not left behind.
+              I don&apos;t just build with AI. I integrate it into your business workflows, customer touchpoints, and internal tools so you&apos;re not left behind.
             </div>
           </div>
         </AnimateIn>

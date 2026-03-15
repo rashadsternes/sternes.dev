@@ -6,9 +6,9 @@ import Image from 'next/image'
 import SectionWrapper from './SectionWrapper'
 
 const projects = [
-  { tier: 'Transformation — E-Commerce', name: 'KNGDM MVMT — Meal Prep & Delivery', img: '/images/portfolio-kngdm.png', position: 'center top' },
-  { tier: 'Growth — Service Business', name: 'XVI — Christian Singles Dining', img: '/images/portfolio-xvi.png', position: 'center top' },
-  { tier: 'Foundation — Service Business', name: 'DG on the Go Movers — Daniel Graafsma', img: '/images/portfolio-dg.png', position: 'center top' },
+  { tier: 'Transformation — E-Commerce', name: 'KNGDM MVMT — Meal Prep & Delivery', img: '/images/portfolio-kngdm.png', position: 'center top', url: 'https://kngdmmvmt.com/' },
+  { tier: 'Growth — Service Business', name: 'Christian Singles Matchmaking', img: '/images/portfolio-xvi.png', position: 'center top', url: 'https://the-xvi-elegant-red.vercel.app/' },
+  { tier: 'Foundation — Service Business', name: 'DG on the Go Movers — Daniel Graafsma', img: '/images/portfolio-dg.png', position: 'center top', url: 'https://dgonthegomovers.com/' },
 ]
 
 function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay: number }) {
@@ -17,12 +17,15 @@ function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay:
   const [hovered, setHovered] = useState(false)
 
   return (
-    <motion.div
+    <motion.a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
       ref={ref}
       initial={{ y: 18, opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : {}}
       transition={{ duration: 0.85, ease: 'easeOut', delay }}
-      style={{ cursor: 'pointer', borderRight: '1px solid #eee' }}
+      style={{ cursor: 'pointer', borderRight: '1px solid #eee', textDecoration: 'none', display: 'block' }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -61,7 +64,7 @@ function PortfolioItem({ project, delay }: { project: typeof projects[0]; delay:
       }}>
         {project.name}
       </div>
-    </motion.div>
+    </motion.a>
   )
 }
 
