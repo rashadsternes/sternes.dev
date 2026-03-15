@@ -8,21 +8,21 @@ import SectionWrapper from './SectionWrapper'
 const projects = [
   {
     tier: 'Transformation — E-Commerce',
-    name: 'KNGDM MVMT — Meal Prep & Delivery',
+    name: 'KNGDM MVMT — Premium Meal Prep & Delivery',
     img: '/images/portfolio-kngdm-full.png',
     w: 1428, h: 8273, scrollDuration: 10,
     url: 'https://kngdmmvmt.com/',
   },
   {
-    tier: 'Growth — Service Business',
-    name: 'Christian Singles Matchmaking',
+    tier: 'Growth — Relationship & Events Service',
+    name: 'The XVI - Christian Singles Matchmaking',
     img: '/images/portfolio-xvi-full.png',
     w: 1434, h: 10592, scrollDuration: 13,
     url: 'https://the-xvi-elegant-red.vercel.app/',
   },
   {
-    tier: 'Foundation — Service Business',
-    name: 'DG on the Go Movers — Daniel Graafsma',
+    tier: 'Foundation — Professional Services Business',
+    name: 'DG on the Go Movers — Moving Company',
     img: '/images/portfolio-dg-full.png',
     w: 1425, h: 4616, scrollDuration: 5,
     url: 'https://dgonthegomovers.com/',
