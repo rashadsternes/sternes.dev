@@ -7,7 +7,7 @@ import SectionWrapper from './SectionWrapper'
 const terms = [
   {
     pct: '25%',
-    desc: 'Deposit required before any work begins — after our exploratory call and written agreement on scope.',
+    desc: 'Deposit required before any work begins. After our exploratory call and written agreement on scope.',
   },
   {
     pct: '25%',

@@ -6,7 +6,7 @@ import SectionWrapper from './SectionWrapper'
 
 const steps = [
   { n: '01', title: 'Discovery', desc: 'A focused conversation to understand your business, goals, and what success actually looks like.' },
-  { n: '02', title: 'Scope & Plan', desc: 'I define features, timeline, and deliverables — clearly, in writing, before a line of code is written.' },
+  { n: '02', title: 'Scope & Plan', desc: 'I define features, timeline, and deliverables clearly, in writing, before a line of code is written.' },
   { n: '03', title: 'Design', desc: 'Visual direction and wireframes presented for your approval before development begins.' },
   { n: '04', title: 'Build', desc: 'Production-grade development using React, Next.js, Supabase, and Claude Code.' },
   { n: '05', title: 'Launch & Handover', desc: "Deployed, tested, and handed over with documentation, so you're never dependent on me to update your own site." },
