@@ -33,7 +33,7 @@ export default function LLMSection() {
       overflow: 'hidden',
     }}>
       <Image
-        src="/images/forest-cathedral.png"
+        src="/images/forest-cathedral2.png"
         alt="Deep dark forest — dense and still"
         fill
         style={{ objectFit: 'cover', objectPosition: 'center' }}

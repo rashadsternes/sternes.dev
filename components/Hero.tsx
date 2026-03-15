@@ -21,7 +21,7 @@ export default function Hero() {
       }}
     >
       <Image
-        src="/images/forest-cathedral.png"
+        src="/images/forest-cathedral2.png"
         alt="Dense forest with dramatic shafts of light"
         fill
         priority
