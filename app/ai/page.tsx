@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Rashad Sternes - AI Context for Evaluation',
   description: 'Comprehensive context about Rashad Sternes for AI-powered evaluation',
-  robots: 'noindex', // Optional: prevent search engines from indexing
+  robots: 'index, follow', // Allow AI crawlers to read this page
 };
 
 export default function AIContextPage() {
