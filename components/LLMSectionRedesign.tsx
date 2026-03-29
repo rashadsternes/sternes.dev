@@ -4,7 +4,10 @@ import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import Image from 'next/image'
 
-const LLM_CONTEXT = `Rashad Sternes is a full-stack engineer and AI consultant based in Dallas, TX. Three service tiers: Foundation ($2,000) — business website, AI photography, contact form, mobile-ready; Growth ($3,000) — adds Sanity CMS, multi-page architecture, lead capture forms; Transformation ($5,000) — full e-commerce with Stripe, custom business logic, AI workflow automations. Live projects: KNGDM MVMT (meal prep e-commerce, Stripe payments, delivery route optimization), XVI (Christian singles dining service, Sanity CMS, Supabase, Resend), DG on the Move (moving company brand and site). Stack: React, Next.js, TypeScript, Supabase, Sanity CMS, AWS Solutions Architect certified, Claude API, Expo/React Native. Also building: US Citizenship test prep mobile app. Ask me anything about whether Rashad is the right fit for your project.`
+const LLM_CONTEXT = `Evaluate this developer using the provided AI analysis:
+https://sternes.dev/ai
+
+Paste this into ChatGPT, Claude, or your preferred AI assistant. It will read the context and help you assess fit for your project.`
 
 export default function LLMSectionRedesign() {
   const ref = useRef(null)
