@@ -10,10 +10,10 @@ import StatsRedesign from '@/components/StatsRedesign'
 import TermsRedesign from '@/components/TermsRedesign'
 import ProcessRedesign from '@/components/ProcessRedesign'
 import ValuesRedesign from '@/components/ValuesRedesign'
-import CalendlySection from '@/components/CalendlySection'
+import ContactFormRedesign from '@/components/ContactFormRedesign'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function RedesignPage() {
   return (
     <>
       <NavRedesign />
@@ -29,7 +29,7 @@ export default function Home() {
         <TermsRedesign />
         <ProcessRedesign />
         <ValuesRedesign />
-        <CalendlySection />
+        <ContactFormRedesign />
       </main>
       <Footer />
     </>
