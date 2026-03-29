@@ -5,10 +5,10 @@ import { useRef } from 'react'
 import Image from 'next/image'
 
 const stats = [
-  { n: '7+', d: 'Years building with React & full-stack engineering', photo: true, img: '/images/bark-rings.png', alt: 'Ancient bark with growth rings — years of accumulated depth' },
+  { n: '7+', d: 'Years building websites', photo: true, img: '/images/bark-rings.png', alt: 'Ancient bark with growth rings — years of accumulated depth' },
   { n: '3', d: 'Live client sites deployed', photo: true, img: '/images/roots-deep.png', alt: 'Ancient root system — deep and sprawling' },
   { n: 'AWS', d: 'Solutions Architect certified', photo: true, img: '/images/bark-ancient.png', alt: 'Ancient bark texture — tactile and premium' },
-  { n: '1', d: 'App in active development. US Citizenship Prep', photo: true, img: '/images/bark-sprout.png', alt: 'New growth emerging from ancient bark' },
+  { n: '30', d: 'Days from kickoff to live', photo: true, img: '/images/bark-sprout.png', alt: 'New growth emerging from ancient bark' },
 ]
 
 export default function Stats() {

@@ -5,12 +5,12 @@ import { useRef } from 'react'
 import SectionWrapper from './SectionWrapper'
 
 const points = [
-  "I understand the business owner's intent, not just the brief",
-  "I don't just leverage AI. I integrate it into your business.",
+  "Sites designed to convert visitors into customers",
+  "Built to win Google searches in your industry",
   "An eye for design that earns trust before a word is read",
+  "I leverage AI and integrate it into your business.",
+  "I ask why before I ask how",
   "Deep technical know-how, production-grade delivery",
-  "Real deployed client work, not portfolio mockups.",
-  "AWS certified & actively building with Claude Code",
 ]
 
 export default function WhyChooseMe() {

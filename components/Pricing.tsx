@@ -8,17 +8,17 @@ const tiers = [
   {
     name: 'Foundation',
     price: '$2,000',
-    features: ['Business website', 'AI-generated photography', 'Contact & inquiry form', 'Mobile responsive', 'Production ready'],
+    features: ['Fully hosted and maintained', 'Professional business website (3-5 pages)', 'Fast loading and SEO-ready', 'Mobile-responsive design', 'Professional copywriting and messaging'],
   },
   {
     name: 'Growth',
-    price: '$3,000',
-    features: ['Everything in Foundation', 'Sanity CMS', 'Multi-page architecture', 'Lead capture & forms', 'Third-party integrations'],
+    price: '$3,500',
+    features: ['Everything in Foundation, plus:', 'Content management system (update your own site)', 'Advanced lead capture forms', 'Built to scale as your business grows', 'Integration with your business tools (email, CRM, analytics)'],
   },
   {
     name: 'Transformation',
     price: '$5,000',
-    features: ['Everything in Growth', 'Full e-commerce + Stripe', 'Custom business logic', 'AI workflow automations', 'Advanced CMS'],
+    features: ['Everything in Growth, plus:', 'Full e-commerce with payment integration', 'Custom features built for your specific business', 'AI automation for repetitive tasks', 'Advanced workflows and business logic'],
   },
 ]
 
