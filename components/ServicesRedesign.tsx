@@ -149,7 +149,7 @@ export default function ServicesRedesign() {
                 Going beneath the surface
                 <br />
                 <span style={{ fontStyle: 'italic', color: '#555' }}>
-                  to find what you actually need
+                  to get clear on what you really need
                 </span>
               </h2>
 
@@ -163,7 +163,7 @@ export default function ServicesRedesign() {
                   maxWidth: '600px',
                 }}
               >
-                I help business owners translate what they actually need into digital products that work. With AI built in from the start, not bolted on at the end.
+                I help business owners by building websites that work as hard as they do.
               </p>
             </div>
           </GrowthRingReveal>
@@ -181,7 +181,7 @@ export default function ServicesRedesign() {
           <ServiceCard
             number="02"
             title="AI Integration & Transformation"
-            description="AI that actually works for your business. Streamlining workflows, automating data entry and follow-ups, eliminating repetitive tasks that drain your time."
+            description="AI that actually works for your business. Streamlining workflows, automating data entry and follow-ups, & eliminating repetitive tasks that drain your time."
             delay={0.4}
           />
 
