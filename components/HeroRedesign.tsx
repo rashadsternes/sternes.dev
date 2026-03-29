@@ -69,13 +69,13 @@ export default function HeroRedesign() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
           style={{
-            fontFamily: 'var(--font-body)',
-            fontSize: '12px',
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#7a7268',
+            fontFamily: 'var(--font-display)',
+            fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+            letterSpacing: '0.01em',
+            color: '#fff',
             marginTop: '2rem',
-            fontWeight: 400,
+            fontWeight: 300,
+            lineHeight: 1.5,
           }}
         >
           Website design & AI integration for business owners who want success in a modern world
