@@ -29,7 +29,7 @@
   --font-display: 'Fraunces', Georgia, serif;
   --font-body:    'DM Sans', Helvetica, Arial, sans-serif;
   --font-mono:    'DM Mono', 'Courier New', monospace;
-  --text-hero:      clamp(2.75rem, 7vw, 5.5rem);
+  --text-hero:      clamp(2rem, 5.5vw, 4.25rem);
   --text-h2:        clamp(1rem, 2vw, 1.35rem);
   --text-skills-hl: clamp(1.75rem, 4vw, 3rem);
   --text-price:     clamp(2.25rem, 4vw, 3.25rem);

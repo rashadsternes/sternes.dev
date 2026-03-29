@@ -1,39 +1,35 @@
-import Nav from '@/components/Nav'
-import Hero from '@/components/Hero'
-import Services from '@/components/Services'
-import QuoteBreak from '@/components/QuoteBreak'
-import WhyChooseMe from '@/components/WhyChooseMe'
-import Portfolio from '@/components/Portfolio'
-import Reviews from '@/components/Reviews'
-import Skills from '@/components/Skills'
-import LLMSection from '@/components/LLMSection'
-import Pricing from '@/components/Pricing'
-import Stats from '@/components/Stats'
-import Terms from '@/components/Terms'
-import Process from '@/components/Process'
-import Values from '@/components/Values'
-import ContactForm from '@/components/ContactForm'
+import NavRedesign from '@/components/NavRedesign'
+import HeroRedesign from '@/components/HeroRedesign'
+import ServicesRedesign from '@/components/ServicesRedesign'
+import QuoteBreakRedesign from '@/components/QuoteBreakRedesign'
+import WhyChooseMeRedesign from '@/components/WhyChooseMeRedesign'
+import PortfolioRedesign from '@/components/PortfolioRedesign'
+import LLMSectionRedesign from '@/components/LLMSectionRedesign'
+import PricingRedesign from '@/components/PricingRedesign'
+import StatsRedesign from '@/components/StatsRedesign'
+import TermsRedesign from '@/components/TermsRedesign'
+import ProcessRedesign from '@/components/ProcessRedesign'
+import ValuesRedesign from '@/components/ValuesRedesign'
+import CalendlySection from '@/components/CalendlySection'
 import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <NavRedesign />
       <main>
-        <Hero />
-        <Services />
-        <QuoteBreak />
-        <WhyChooseMe />
-        <Portfolio />
-        <Reviews />
-        <Skills />
-        <LLMSection />
-        <Pricing />
-        <Stats />
-        <Terms />
-        <Process />
-        <Values />
-        <ContactForm />
+        <HeroRedesign />
+        <ServicesRedesign />
+        <QuoteBreakRedesign />
+        <WhyChooseMeRedesign />
+        <PortfolioRedesign />
+        <LLMSectionRedesign />
+        <PricingRedesign />
+        <StatsRedesign />
+        <TermsRedesign />
+        <ProcessRedesign />
+        <ValuesRedesign />
+        <CalendlySection />
       </main>
       <Footer />
     </>

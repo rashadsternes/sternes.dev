@@ -7,9 +7,9 @@ import GrowthRingReveal from './GrowthRingReveal'
 const points = [
   "Sites designed to convert visitors into customers",
   "Built to win Google searches in your industry",
-  "An eye for design that earns trust before a word is read",
-  "I leverage AI and integrate it into your business.",
   "I ask why before I ask how",
+  "I leverage AI and integrate it into your business.",
+  "An eye for design that earns trust before a word is read",
   "Deep technical know-how, production-grade delivery",
 ]
 

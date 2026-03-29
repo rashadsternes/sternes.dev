@@ -57,29 +57,14 @@ export default function HeroRedesign() {
             letterSpacing: '-0.02em',
           }}
         >
+          Website design
+          <br />
           Built for your business.
           <br />
-          <em style={{ color: '#c8bfaa', display: 'block' }}>
+          <em style={{ color: '#c8bfaa', display: 'block', whiteSpace: 'nowrap' }}>
             Designed for what&apos;s next.
           </em>
         </motion.h1>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          style={{
-            fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(1rem, 2vw, 1.25rem)',
-            letterSpacing: '0.01em',
-            color: '#fff',
-            marginTop: '2rem',
-            fontWeight: 300,
-            lineHeight: 1.5,
-          }}
-        >
-          Website design & AI integration for business owners who want success in a modern world
-        </motion.div>
       </div>
 
       <div style={{
