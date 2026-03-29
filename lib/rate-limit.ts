@@ -99,8 +99,8 @@ function getIP(request: NextRequest): string {
     return realIP;
   }
 
-  // Fallback to connection IP
-  return request.ip || 'unknown';
+  // Fallback when IP cannot be determined
+  return 'unknown';
 }
 
 /**
