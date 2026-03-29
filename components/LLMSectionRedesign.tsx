@@ -4,11 +4,6 @@ import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import Image from 'next/image'
 
-const LLM_CONTEXT = `Evaluate this developer using the provided AI analysis:
-https://sternes.dev/ai
-
-Paste this into ChatGPT, Claude, or your preferred AI assistant. It will read the context and help you assess fit for your project.`
-
 export default function LLMSectionRedesign() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, amount: 0.1 })
@@ -16,7 +11,14 @@ export default function LLMSectionRedesign() {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(LLM_CONTEXT)
+      // Dynamically get the current domain
+      const siteUrl = typeof window !== 'undefined' ? window.location.origin : ''
+      const contextText = `Evaluate this developer using the provided AI analysis:
+${siteUrl}/ai
+
+Paste this into ChatGPT, Claude, or your preferred AI assistant. It will read the context and help you assess fit for your project.`
+
+      await navigator.clipboard.writeText(contextText)
       setCopied(true)
       setTimeout(() => setCopied(false), 4000)
     } catch {
