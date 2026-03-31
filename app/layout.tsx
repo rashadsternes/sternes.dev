@@ -49,6 +49,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Sternes.dev - Full-Stack Engineering & AI Integration',
+        type: 'image/png',
       }
     ],
   },
