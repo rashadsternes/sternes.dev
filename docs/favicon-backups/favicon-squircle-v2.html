@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squircle V2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      background: transparent;
+    }
+    svg {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- iOS squircle path - accurate continuous curvature -->
+      <clipPath id="squirclePath">
+        <path d="M 90,0
+                 C 126,0 146,0 161,15
+                 C 176,30 176,50 176,90
+                 C 176,130 176,150 161,165
+                 C 146,180 126,180 90,180
+                 C 54,180 34,180 19,165
+                 C 4,150 4,130 4,90
+                 C 4,50 4,30 19,15
+                 C 34,0 54,0 90,0 Z" />
+      </clipPath>
+    </defs>
+
+    <!-- Background image clipped to squircle -->
+    <image
+      href="favicon-square.png"
+      width="180"
+      height="180"
+      clip-path="url(#squirclePath)" />
+  </svg>
+</body>
+</html>

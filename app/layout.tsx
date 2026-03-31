@@ -24,9 +24,56 @@ const dmMono = DM_Mono({
   display: 'swap',
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sternes.vercel.app'
+
 export const metadata: Metadata = {
-  title: 'Sternes.dev — Full-Stack Engineering & AI Integration',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'Sternes.dev — Full-Stack Engineering & AI Integration',
+    template: '%s | Sternes.dev'
+  },
   description: 'Full-stack engineer and AI consultant based in Dallas, TX. Websites, web apps, and AI workflow integration for service businesses.',
+  keywords: ['full-stack developer', 'AI integration', 'Next.js', 'TypeScript', 'web development', 'Dallas', 'Texas', 'e-commerce', 'Sanity CMS'],
+  authors: [{ name: 'Rashad Sternes' }],
+  creator: 'Rashad Sternes',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteUrl,
+    title: 'Sternes.dev — Full-Stack Engineering & AI Integration',
+    description: 'Full-stack engineer and AI consultant based in Dallas, TX. Websites, web apps, and AI workflow integration for service businesses.',
+    siteName: 'Sternes.dev',
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Sternes.dev - Full-Stack Engineering & AI Integration',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sternes.dev — Full-Stack Engineering & AI Integration',
+    description: 'Full-stack engineer and AI consultant based in Dallas, TX. Websites, web apps, and AI workflow integration for service businesses.',
+    images: ['/images/og-image.png'],
+  },
+  icons: {
+    icon: [{ url: '/favicon.ico', sizes: 'any' }],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  manifest: '/manifest.json',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({

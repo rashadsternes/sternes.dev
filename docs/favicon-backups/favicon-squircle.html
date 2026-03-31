@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squircle Favicon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+    .squircle-container {
+      width: 180px;
+      height: 180px;
+      position: relative;
+      background: transparent;
+    }
+    .squircle {
+      width: 180px;
+      height: 180px;
+      background-image: url('favicon-square.png');
+      background-size: cover;
+      background-position: center;
+      /* iOS squircle formula - continuous curvature */
+      border-radius: 22.5%; /* ~40.5px for 180px, iOS-like */
+      /* Alternative: More pronounced rounding */
+      /* border-radius: 28%; */
+    }
+  </style>
+</head>
+<body>
+  <div class="squircle-container">
+    <div class="squircle"></div>
+  </div>
+</body>
+</html>

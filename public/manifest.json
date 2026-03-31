@@ -1,0 +1,22 @@
+{
+  "name": "Sternes.dev - Full-Stack Engineering & AI Integration",
+  "short_name": "Sternes.dev",
+  "description": "Full-stack engineer and AI consultant based in Dallas, TX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2D4A3E",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

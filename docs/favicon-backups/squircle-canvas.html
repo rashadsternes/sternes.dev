@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 180px;
+      height: 180px;
+      background: transparent;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const size = window.innerWidth; // Use viewport size
+    const radius = Math.floor(size * 0.22); // 22% radius for squircle
+
+    canvas.width = size;
+    canvas.height = size;
+
+    // Load the image
+    const img = new Image();
+    img.onload = function() {
+      // Create squircle path
+      ctx.beginPath();
+      ctx.moveTo(radius, 0);
+      ctx.lineTo(size - radius, 0);
+      ctx.arcTo(size, 0, size, radius, radius);
+      ctx.lineTo(size, size - radius);
+      ctx.arcTo(size, size, size - radius, size, radius);
+      ctx.lineTo(radius, size);
+      ctx.arcTo(0, size, 0, size - radius, radius);
+      ctx.lineTo(0, radius);
+      ctx.arcTo(0, 0, radius, 0, radius);
+      ctx.closePath();
+
+      // Clip to squircle
+      ctx.clip();
+
+      // Draw image
+      ctx.drawImage(img, 0, 0, size, size);
+    };
+    img.src = 'favicon-new.png';
+  </script>
+</body>
+</html>

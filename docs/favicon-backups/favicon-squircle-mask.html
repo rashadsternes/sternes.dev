@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squircle Mask</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      background: transparent;
+    }
+    .squircle-wrapper {
+      width: 180px;
+      height: 180px;
+      position: relative;
+    }
+    .squircle-image {
+      width: 180px;
+      height: 180px;
+      background-image: url('favicon-square.png');
+      background-size: cover;
+      background-position: center;
+      /* True iOS squircle using SVG path */
+      clip-path: url(#squircle);
+      -webkit-clip-path: url(#squircle);
+    }
+  </style>
+</head>
+<body>
+  <!-- SVG squircle definition (iOS-accurate formula) -->
+  <svg width="0" height="0">
+    <defs>
+      <clipPath id="squircle" clipPathUnits="objectBoundingBox">
+        <!-- Superellipse path - iOS squircle formula -->
+        <path d="M 0,0.5 C 0,0.224 0.224,0 0.5,0 S 1,0.224 1,0.5 1,1 0.5,1 0,0.776 0,0.5" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <div class="squircle-wrapper">
+    <div class="squircle-image"></div>
+  </div>
+</body>
+</html>

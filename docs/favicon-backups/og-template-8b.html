@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Image 8B - Sternes.dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=DM+Sans:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #FEFEFE;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      padding: 120px 80px 80px 80px;
+    }
+    .geometric-shapes {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 450px;
+      height: 450px;
+      overflow: visible;
+    }
+    .shape {
+      position: absolute;
+      filter: blur(0px);
+    }
+    .triangle-1 {
+      width: 0;
+      height: 0;
+      border-left: 400px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 400px solid #2D4A3E;
+      bottom: 0;
+      right: 0;
+    }
+    .triangle-2 {
+      width: 0;
+      height: 0;
+      border-left: 280px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 280px solid rgba(74, 124, 89, 0.9);
+      bottom: 60px;
+      right: 80px;
+    }
+    .triangle-3 {
+      width: 0;
+      height: 0;
+      border-left: 160px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 160px solid rgba(127, 182, 133, 0.8);
+      bottom: 280px;
+      right: 200px;
+    }
+    .content {
+      position: relative;
+      z-index: 10;
+      max-width: 650px;
+    }
+    .brand {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 42px;
+      color: #2D4A3E;
+      letter-spacing: 3px;
+      margin-bottom: 100px;
+    }
+    .headline {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 68px;
+      color: #2D4A3E;
+      line-height: 1.1;
+      margin-bottom: 50px;
+    }
+    .body-text {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      color: #555555;
+      line-height: 1.5;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="geometric-shapes">
+    <div class="shape triangle-1"></div>
+    <div class="shape triangle-2"></div>
+    <div class="shape triangle-3"></div>
+  </div>
+  <div class="content">
+    <div class="brand">STERNES.DEV</div>
+    <div class="headline">Modern Website Design</div>
+    <div class="body-text">
+      Professional websites that make your business look its best
+    </div>
+  </div>
+</body>
+</html>
