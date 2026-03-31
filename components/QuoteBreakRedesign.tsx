@@ -55,7 +55,7 @@ export default function QuoteBreakRedesign() {
           lineHeight: 1.45,
           letterSpacing: '-0.01em',
         }}>
-          &ldquo;I tell you what you need to hear, not what you want to hear. My job is discovering real ROI.&rdquo;
+          &ldquo;I listen first, then focus on what will actually drive ROI for your business.&rdquo;
         </p>
       </motion.div>
     </section>
