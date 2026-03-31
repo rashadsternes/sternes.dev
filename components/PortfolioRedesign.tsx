@@ -179,13 +179,7 @@ export default function PortfolioRedesign() {
         </GrowthRingReveal>
 
         {/* Portfolio grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '2rem',
-          }}
-        >
+        <div className="portfolio-grid">
           {projects.map((project, i) => (
             <PortfolioItem key={i} project={project} delay={0.2 + i * 0.1} />
           ))}
@@ -193,9 +187,16 @@ export default function PortfolioRedesign() {
       </div>
 
       <style jsx>{`
-        @media (max-width: 768px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr !important;
+        .portfolio-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+        }
+
+        @media (max-width: 900px) {
+          .portfolio-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
           }
         }
       `}</style>
