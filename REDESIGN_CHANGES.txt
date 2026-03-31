@@ -1,0 +1,23 @@
+A	app/redesign/page.tsx
+A	components/ContactFormRedesign.tsx
+A	components/CustomCursor.tsx
+A	components/GrowthRingReveal.tsx
+A	components/HeroRedesign.tsx
+A	components/LLMSectionRedesign.tsx
+A	components/NavRedesign.tsx
+A	components/PortfolioRedesign.tsx
+A	components/PricingRedesign.tsx
+A	components/ProcessRedesign.tsx
+A	components/QuoteBreakRedesign.tsx
+A	components/ServicesRedesign.tsx
+A	components/StatsRedesign.tsx
+A	components/TermsRedesign.tsx
+A	components/ValuesRedesign.tsx
+A	components/WhyChooseMeRedesign.tsx
+R100	ABUSE_PROTECTION.md	docs/ABUSE_PROTECTION.md
+R100	FIT_ASSESSMENT_README.md	docs/FIT_ASSESSMENT_README.md
+R100	MULTI_TURN_CONVERSATION.md	docs/MULTI_TURN_CONVERSATION.md
+A	docs/PRICING_BROCHURE.md
+A	docs/REDESIGN_NOTES.md
+A	docs/SERVICE_OFFERINGS.md
+M	tsconfig.json
