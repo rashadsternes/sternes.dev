@@ -100,7 +100,6 @@ export default function PricingRedesign() {
       style={{
         background: 'var(--color-white)',
         padding: '4rem 2.5rem',
-        borderTop: '1px solid #eee',
       }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
