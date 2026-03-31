@@ -173,7 +173,7 @@ export default function ServicesRedesign() {
         <div>
           <ServiceCard
             number="01"
-            title="Websites & Web Apps"
+            title="Website Design & Development"
             description="Professional websites that establish credibility, capture leads, process payments, and automate the repetitive work. Whatever your business needs to succeed online."
             delay={0.3}
           />

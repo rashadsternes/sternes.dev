@@ -55,7 +55,7 @@ export default function QuoteBreakRedesign() {
           lineHeight: 1.45,
           letterSpacing: '-0.01em',
         }}>
-          &ldquo;I prioritize honest assessment over validation. My job is discovering real ROI, not confirming assumptions.&rdquo;
+          &ldquo;I tell you what you need to hear, not what you want to hear. My job is discovering real ROI.&rdquo;
         </p>
       </motion.div>
     </section>
