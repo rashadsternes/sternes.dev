@@ -101,19 +101,39 @@ export default function CalendlySection() {
               Book a discovery call. We'll take 30 – 45 minutes to discuss what's working, what's not, and whether a website or AI integration can help your business succeed. I'll ask questions, you'll get answers, and we'll see if it makes sense to work together.
             </p>
 
-            <div
+            <button
+              onClick={() => {
+                const widget = document.querySelector('.calendly-inline-widget')
+                widget?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                })
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = '#5CA05D'
+                e.currentTarget.style.transform = 'translateX(4px)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = '#2C5F2D'
+                e.currentTarget.style.transform = 'translateX(0)'
+              }}
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: '13px',
-                fontWeight: 400,
-                color: '#111',
+                fontWeight: 600,
+                color: '#2C5F2D',
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
                 marginBottom: '1rem',
+                background: 'none',
+                border: 'none',
+                padding: 0,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
               }}
             >
               → Schedule Your Discovery Call
-            </div>
+            </button>
           </div>
         </GrowthRingReveal>
 
