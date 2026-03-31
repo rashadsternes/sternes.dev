@@ -151,13 +151,7 @@ export default function PricingRedesign() {
         </GrowthRingReveal>
 
         {/* Pricing tiers grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '2rem',
-          }}
-        >
+        <div className="pricing-grid">
           {tiers.map((tier, i) => (
             <PricingTier key={tier.name} tier={tier} delay={0.2 + i * 0.1} />
           ))}
@@ -165,9 +159,16 @@ export default function PricingRedesign() {
       </div>
 
       <style jsx>{`
-        @media (max-width: 768px) {
-          div[style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr !important;
+        .pricing-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+        }
+
+        @media (max-width: 900px) {
+          .pricing-grid {
+            grid-template-columns: 1fr;
+            gap: 0;
           }
         }
       `}</style>
