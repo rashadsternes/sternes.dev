@@ -29,34 +29,34 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sternes.vercel.app'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Sternes.dev — Full-Stack Engineering & AI Integration',
+    default: 'Dallas Website Designer | Beautifully Designed Sites & AI Integration | Sternes.dev',
     template: '%s | Sternes.dev'
   },
-  description: 'Full-stack engineer and AI consultant based in Dallas, TX. Websites, web apps, and AI workflow integration for service businesses.',
-  keywords: ['full-stack developer', 'AI integration', 'Next.js', 'TypeScript', 'web development', 'Dallas', 'Texas', 'e-commerce', 'Sanity CMS'],
+  description: 'Professional website designer in Dallas, TX. Modern site design that gets you more customers and makes your business look its best. Plus AI automation to save time on repetitive tasks.',
+  keywords: ['website designer dallas', 'dallas website design', 'custom website design', 'professional website designer', 'small business website', 'modern website design', 'modern site design', 'beautifully designed websites', 'christian website designer dallas', 'christian business website design', 'ai automation', 'business automation tools', 'dallas web designer', 'website design dallas tx'],
   authors: [{ name: 'Rashad Sternes' }],
   creator: 'Rashad Sternes',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'Sternes.dev — Full-Stack Engineering & AI Integration',
-    description: 'Full-stack engineer and AI consultant based in Dallas, TX. Websites, web apps, and AI workflow integration for service businesses.',
+    title: 'Website Design for Business Owners | Sternes.dev',
+    description: 'Professional website design that gets you more customers and makes your business look its best. Plus AI automation to save time on repetitive tasks.',
     siteName: 'Sternes.dev',
     images: [
       {
         url: '/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Sternes.dev - Full-Stack Engineering & AI Integration',
+        alt: 'Sternes.dev - Website Design for Business Owners',
         type: 'image/png',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sternes.dev — Full-Stack Engineering & AI Integration',
-    description: 'Full-stack engineer and AI consultant based in Dallas, TX. Websites, web apps, and AI workflow integration for service businesses.',
+    title: 'Website Design for Business Owners | Sternes.dev',
+    description: 'Professional website design that gets you more customers and makes your business look its best. Plus AI automation to save time on repetitive tasks.',
     images: ['/images/og-image.png'],
   },
   icons: {

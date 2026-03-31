@@ -199,12 +199,19 @@
 
 **Steps:**
 1. Go to https://search.google.com/search-console
-2. Add property (sternes.dev or sternes.vercel.app)
-3. Verify ownership (DNS or meta tag)
-4. Submit sitemap: `https://sternes.dev/sitemap.xml`
+2. Add property (sternes.vercel.app currently)
+3. Verify ownership (DNS or meta tag - verification file already deployed)
+4. Submit sitemap: `https://sternes.vercel.app/sitemap.xml`
 5. Monitor performance
 
-**Status:** ⏳ Optional but recommended
+**Status:** ⏳ In progress
+
+**⚠️ WHEN SWITCHING TO STERNES.DEV:**
+- Add new property for `https://sternes.dev` in Search Console
+- Verify ownership again
+- Submit new sitemap: `https://sternes.dev/sitemap.xml`
+- Request indexing for key pages
+- Keep both properties active (vercel.app will redirect)
 
 ---
 

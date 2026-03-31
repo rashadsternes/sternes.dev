@@ -118,6 +118,13 @@ NEXT_PUBLIC_SITE_URL=https://sternes.vercel.app
 4. Redeploy (all URLs will automatically update)
 5. Update `.env.local` to match for local development
 
+**After domain switch - Google Search Console:**
+1. Add new property for `https://sternes.dev` in Search Console
+2. Verify ownership (DNS or HTML file method)
+3. Submit sitemap: `https://sternes.dev/sitemap.xml`
+4. Request indexing for key pages (homepage, /ai)
+5. Keep sternes.vercel.app property active (will redirect, maintains history)
+
 ## Import Path Alias
 
 Use `@/` to reference the project root:
@@ -207,3 +214,40 @@ The fit assessment features use Claude Sonnet 4.5 to evaluate whether potential 
 - What he's overkill for (simple sites, basic cosmetic changes)
 
 When modifying assessment behavior, update the `RASHAD_CONTEXT` constant in the relevant API route.
+
+## Future SEO Opportunities
+
+Planned content and features to improve search visibility and organic traffic:
+
+### 1. Case Studies
+- Showcase real client projects with before/after examples
+- Target long-tail searches like "website redesign case study" or "[industry] website examples"
+- Build trust and demonstrate concrete results
+- Location: Create `app/case-studies/` or `app/work/` route
+
+### 2. Schema Markup (LocalBusiness)
+- Implement structured data for Google Maps and local search results
+- Add to `app/layout.tsx` or create `app/schema.tsx`
+- Include: business name, address, phone, hours, service area (Dallas/TX), reviews
+- Tools: [Google's Schema Markup Validator](https://validator.schema.org/)
+- Reference: [LocalBusiness schema docs](https://schema.org/LocalBusiness)
+
+### 3. Blog Posts
+- Target outcome-based searches that prospects actually use
+- Example topics:
+  - "5 Ways Your Website Can Get You More Customers"
+  - "How Much Should a Custom Website Cost? (2026 Guide)"
+  - "AI Automation for Small Business: Where to Start"
+  - "Website Features That Actually Convert Visitors to Customers"
+- Location: Create `app/blog/` route with MDX or Sanity CMS integration
+- Frequency: 1-2 posts per month for consistent SEO momentum
+
+### 4. FAQ Section
+- Target question-based searches ("How much does...", "What is...", "Do I need...")
+- Can be added to homepage or as dedicated `/faq` page
+- Implement FAQ schema markup for Google's featured snippets
+
+### 5. Service Area Pages
+- Create location-specific landing pages for nearby cities (if expanding service area)
+- Examples: "Website Design Plano TX", "Fort Worth Web Designer"
+- Only add if genuinely servicing these areas
