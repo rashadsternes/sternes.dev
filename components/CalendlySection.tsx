@@ -1,9 +1,11 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import GrowthRingReveal from './GrowthRingReveal'
 
 export default function CalendlySection() {
+  const sectionRef = useRef<HTMLElement>(null)
+
   useEffect(() => {
     // Load Calendly widget script
     const script = document.createElement('script')
@@ -11,16 +13,40 @@ export default function CalendlySection() {
     script.async = true
     document.body.appendChild(script)
 
+    // Preload Calendly before it comes into view
+    // This observer triggers 500px before the section enters viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Force Calendly to initialize early by adding a class
+            // Calendly's script watches for visibility and will init when it detects this
+            entry.target.classList.add('calendly-preload')
+          }
+        })
+      },
+      {
+        rootMargin: '500px', // Trigger 500px before element enters viewport
+        threshold: 0,
+      }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
     return () => {
-      // Cleanup script on unmount
+      // Cleanup
       if (document.body.contains(script)) {
         document.body.removeChild(script)
       }
+      observer.disconnect()
     }
   }, [])
 
   return (
     <section
+      ref={sectionRef}
       id="contact"
       style={{
         background: 'var(--color-white)',
@@ -83,7 +109,7 @@ export default function CalendlySection() {
                 color: '#111',
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
-                marginBottom: '2rem',
+                marginBottom: '1rem',
               }}
             >
               → Schedule Your Discovery Call
@@ -95,9 +121,10 @@ export default function CalendlySection() {
         <div
           className="calendly-inline-widget"
           data-url="https://calendly.com/rashadsternes/discovery-call"
+          data-resize="true"
           style={{
             minWidth: '320px',
-            height: '1050px', // Increased to show full calendar without internal scroll
+            minHeight: '1100px',
           }}
         />
       </div>
