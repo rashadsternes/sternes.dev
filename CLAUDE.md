@@ -99,9 +99,24 @@ Additionally, Geist fonts are available in `app/fonts/`:
 Required for production:
 ```
 ANTHROPIC_API_KEY_PUBLIC_PROD=sk-ant-...
+NEXT_PUBLIC_SITE_URL=https://sternes.vercel.app
 ```
 
-This key is used for public-facing fit assessment features (not for sensitive operations).
+**ANTHROPIC_API_KEY_PUBLIC_PROD:**
+- Used for public-facing fit assessment features (not for sensitive operations)
+
+**NEXT_PUBLIC_SITE_URL:**
+- **Current:** `https://sternes.vercel.app` (production domain)
+- **Future:** Update to `https://sternes.dev` when custom domain is configured
+- Used by: OG images, robots.txt, sitemap.xml, metadata
+- Allows easy domain switching without code changes
+
+**⚠️ IMPORTANT - When switching to custom domain:**
+1. Configure DNS and add sternes.dev to Vercel project
+2. Update `NEXT_PUBLIC_SITE_URL` in Vercel Dashboard → Settings → Environment Variables
+3. Change value from `https://sternes.vercel.app` to `https://sternes.dev`
+4. Redeploy (all URLs will automatically update)
+5. Update `.env.local` to match for local development
 
 ## Import Path Alias
 
