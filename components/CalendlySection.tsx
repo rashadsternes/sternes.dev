@@ -97,7 +97,7 @@ export default function CalendlySection() {
           data-url="https://calendly.com/rashadsternes/discovery-call"
           style={{
             minWidth: '320px',
-            height: '700px',
+            height: '1050px', // Increased to show full calendar without internal scroll
           }}
         />
       </div>
