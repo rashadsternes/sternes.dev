@@ -7,13 +7,13 @@ import Image from 'next/image'
 const values = [
   {
     n: 'I',
-    title: 'Work with the business, not just the brief.',
-    desc: 'Your technology should reflect your purpose. I take time to understand what you\'re building before I build anything for you.',
+    title: 'I build websites that solve real business problems.',
+    desc: 'Your site should help you sell, inform, or convert—not just exist. I figure out what your business needs, then build for that.',
   },
   {
     n: 'II',
-    title: 'Built to last, like old growth.',
-    desc: "Durable, intentional, designed to carry weight over time. Clean code and clear architecture you won't outgrow.",
+    title: 'Design that serves your business goals.',
+    desc: 'I design to help you sell, convert, and communicate clearly with the people who matter to your business. Every decision serves a purpose.',
   },
   {
     n: 'III',

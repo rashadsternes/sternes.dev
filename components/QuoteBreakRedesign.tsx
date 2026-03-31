@@ -55,7 +55,7 @@ export default function QuoteBreakRedesign() {
           lineHeight: 1.45,
           letterSpacing: '-0.01em',
         }}>
-          &ldquo;I focus on understanding what a business owner actually needs. Then building something durable enough to last.&rdquo;
+          &ldquo;I prioritize honest assessment over validation. My job is discovering real ROI, not confirming assumptions.&rdquo;
         </p>
       </motion.div>
     </section>

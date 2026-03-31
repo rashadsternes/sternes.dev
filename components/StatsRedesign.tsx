@@ -8,7 +8,7 @@ const stats = [
   { n: '7+', d: 'Years building websites', photo: true, img: '/images/bark-rings.png', alt: 'Growth rings' },
   { n: '3', d: 'Live client sites deployed', photo: true, img: '/images/roots-deep.png', alt: 'Root system' },
   { n: 'AWS', d: 'Solutions Architect certified', photo: true, img: '/images/bark-ancient.png', alt: 'Bark texture' },
-  { n: '2-4', d: 'Days from kickoff to live', photo: true, img: '/images/bark-sprout.png', alt: 'New growth' },
+  { n: '30', d: 'Days from kickoff to live', photo: true, img: '/images/bark-sprout.png', alt: 'New growth' },
 ]
 
 export default function StatsRedesign() {

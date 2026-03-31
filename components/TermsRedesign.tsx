@@ -59,7 +59,7 @@ export default function TermsRedesign() {
                 maxWidth: '600px',
               }}
             >
-              I work on a prepaid basis, divided into clear stages. No surprises, no scope creep.
+              I work on a prepaid basis, divided into clear stages. You pay as work progresses.
             </p>
           </div>
         </GrowthRingReveal>
