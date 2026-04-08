@@ -18,7 +18,7 @@ export default function NavRedesign() {
         textTransform: 'uppercase',
         fontWeight: 400,
       }}>
-        STERNES.DEV
+        STERNES DIGITAL
       </div>
     </nav>
   )
