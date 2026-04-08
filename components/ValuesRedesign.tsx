@@ -8,7 +8,7 @@ const values = [
   {
     n: 'I',
     title: 'I build websites that solve real business problems.',
-    desc: 'Your site should help you sell, inform, or convert—not just exist. I figure out what your business needs, then build for that.',
+    desc: 'Your site should help you sell, inform, or convert. Not just exist. I figure out what your business needs, then build for that.',
   },
   {
     n: 'II',
