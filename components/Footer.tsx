@@ -14,7 +14,7 @@ export default function Footer() {
         letterSpacing: '0.35em',
         textTransform: 'uppercase',
       }}>
-        STERNES.DEV
+        STERNES DIGITAL
       </div>
       <div style={{
         display: 'flex',
@@ -32,7 +32,7 @@ export default function Footer() {
         fontSize: '10px',
         color: '#333',
       }}>
-        © 2026 Rashad Sternes
+        © 2026 Sternes Digital · Dallas, TX
       </div>
     </footer>
   )

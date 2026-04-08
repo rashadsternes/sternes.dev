@@ -34,15 +34,15 @@ export const metadata: Metadata = {
   },
   description: 'Professional website designer in Dallas, TX. Modern site design that gets you more customers and makes your business look its best. Plus AI automation to save time on repetitive tasks.',
   keywords: ['website designer dallas', 'dallas website design', 'custom website design', 'professional website designer', 'small business website', 'modern website design', 'modern site design', 'beautifully designed websites', 'christian website designer dallas', 'christian business website design', 'ai automation', 'business automation tools', 'dallas web designer', 'website design dallas tx'],
-  authors: [{ name: 'Rashad Sternes' }],
-  creator: 'Rashad Sternes',
+  authors: [{ name: 'Sternes Digital' }],
+  creator: 'Sternes Digital',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
     title: 'Website Design for Business Owners | Sternes.dev',
     description: 'Professional website design that gets you more customers and makes your business look its best. Plus AI automation to save time on repetitive tasks.',
-    siteName: 'Sternes.dev',
+    siteName: 'Sternes Digital',
     images: [
       {
         url: '/images/og-image.png',

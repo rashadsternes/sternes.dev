@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy policy for Sternes.dev',
+  description: 'Privacy policy for Sternes Digital',
 }
 
 export default function PrivacyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="text-gray-600 mb-8">
-            Last updated: March 30, 2026
+            Last updated: April 8, 2026
           </p>
 
           <section className="mb-8">
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
               Introduction
             </h2>
             <p>
-              Sternes.dev ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+              Sternes Digital ("we," "our," or "us"), operating at sternes.dev, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
             </p>
           </section>
 
@@ -166,7 +166,7 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <p className="mt-4">
-              Email: <a href="mailto:hello@sternes.dev" className="text-blue-600 hover:underline">hello@sternes.dev</a>
+              Email: <a href="mailto:support@sternes.dev" className="text-blue-600 hover:underline">support@sternes.dev</a>
             </p>
           </section>
 

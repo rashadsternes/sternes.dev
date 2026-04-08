@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of service for Sternes.dev',
+  description: 'Terms of service for Sternes Digital',
 }
 
 export default function TermsPage() {
@@ -15,7 +15,7 @@ export default function TermsPage() {
           </h1>
 
           <p className="text-gray-600 mb-8">
-            Last updated: March 30, 2026
+            Last updated: April 8, 2026
           </p>
 
           <section className="mb-8">
@@ -23,7 +23,7 @@ export default function TermsPage() {
               Agreement to Terms
             </h2>
             <p>
-              By accessing or using Sternes.dev (the "Website"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these Terms, you may not access the Website.
+              By accessing or using sternes.dev (the "Website"), operated by Sternes Digital, you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these Terms, you may not access the Website.
             </p>
           </section>
 
@@ -32,7 +32,7 @@ export default function TermsPage() {
               Description of Services
             </h2>
             <p>
-              Sternes.dev provides information about full-stack engineering and AI integration services, including but not limited to:
+              Sternes Digital provides information about full-stack engineering and AI integration services, including but not limited to:
             </p>
             <ul>
               <li>Web development and application development services</li>
@@ -67,7 +67,7 @@ export default function TermsPage() {
               Intellectual Property
             </h2>
             <p>
-              The Website and its original content, features, and functionality are owned by Rashad Sternes and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+              The Website and its original content, features, and functionality are owned by Sternes Digital and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
             </p>
             <p>
               You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Website without prior written consent, except for your own personal, non-commercial use.
@@ -97,7 +97,26 @@ export default function TermsPage() {
               Third-Party Links and Services
             </h2>
             <p>
-              The Website may contain links to third-party websites or services (such as Calendly and Anthropic) that are not owned or controlled by Sternes.dev. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
+              The Website may contain links to third-party websites or services (such as Calendly and Anthropic) that are not owned or controlled by Sternes Digital. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'var(--font-display)' }}>
+              Payments, Refunds, and Cancellations
+            </h2>
+            <p>
+              All project engagements require a non-refundable deposit to reserve scheduling and begin work. The deposit amount and payment schedule will be outlined in your individual project agreement.
+            </p>
+            <ul>
+              <li>Deposits are non-refundable once paid</li>
+              <li>Milestone payments are non-refundable once the associated deliverables have been completed and delivered</li>
+              <li>Either party may cancel a project with 14 days written notice</li>
+              <li>In the event of cancellation, the client is responsible for payment for all work completed up to the cancellation date</li>
+              <li>If Sternes Digital is unable to fulfill a project, the client will receive a full refund of any payments made for undelivered work</li>
+            </ul>
+            <p>
+              Specific payment terms, deliverables, and timelines are defined in individual project agreements, which take precedence over these general Terms where applicable.
             </p>
           </section>
 
@@ -127,7 +146,7 @@ export default function TermsPage() {
               Limitation of Liability
             </h2>
             <p>
-              TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL RASHAD STERNES OR STERNES.DEV BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE WEBSITE.
+              TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL STERNES DIGITAL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE WEBSITE.
             </p>
             <p>
               OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATING TO THE WEBSITE SHALL NOT EXCEED $100.
@@ -139,7 +158,7 @@ export default function TermsPage() {
               Indemnification
             </h2>
             <p>
-              You agree to indemnify, defend, and hold harmless Rashad Sternes, Sternes.dev, and their affiliates from and against all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from your use of the Website or violation of these Terms.
+              You agree to indemnify, defend, and hold harmless Sternes Digital and its affiliates from and against all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from your use of the Website or violation of these Terms.
             </p>
           </section>
 
@@ -184,7 +203,7 @@ export default function TermsPage() {
               If you have any questions about these Terms, please contact us at:
             </p>
             <p className="mt-4">
-              Email: <a href="mailto:hello@sternes.dev" className="text-blue-600 hover:underline">hello@sternes.dev</a>
+              Email: <a href="mailto:support@sternes.dev" className="text-blue-600 hover:underline">support@sternes.dev</a>
             </p>
           </section>
 
