@@ -114,7 +114,7 @@
 ### **7. Environment Configuration**
 
 **.env.local:**
-- ✅ NEXT_PUBLIC_SITE_URL=https://sternes.vercel.app
+- ✅ NEXT_PUBLIC_SITE_URL=https://sternes.dev
 - ✅ ANTHROPIC_API_KEY_PUBLIC_PROD (existing)
 
 **.env.example:**
@@ -147,7 +147,7 @@
 2. Settings → Environment Variables
 3. Add new variable:
    - **Key:** `NEXT_PUBLIC_SITE_URL`
-   - **Value:** `https://sternes.vercel.app` (current production)
+   - **Value:** `https://sternes.dev` (production)
    - **Environments:** Production ✓, Preview ✓
 4. Click "Save"
 5. Redeploy (Deployments → ... → Redeploy)
@@ -179,8 +179,8 @@
 
 #### **3. Custom Domain Setup (When Ready)**
 
-**Current:** sternes.vercel.app
-**Future:** sternes.dev
+**Current:** sternes.dev (live)
+**Previous:** sternes.vercel.app (redirects to sternes.dev)
 
 **Steps:**
 1. Configure DNS for sternes.dev
@@ -199,9 +199,9 @@
 
 **Steps:**
 1. Go to https://search.google.com/search-console
-2. Add property (sternes.vercel.app currently)
-3. Verify ownership (DNS or meta tag - verification file already deployed)
-4. Submit sitemap: `https://sternes.vercel.app/sitemap.xml`
+2. Add property for `https://sternes.dev`
+3. Verify ownership (DNS or meta tag)
+4. Submit sitemap: `https://sternes.dev/sitemap.xml`
 5. Monitor performance
 
 **Status:** ⏳ In progress

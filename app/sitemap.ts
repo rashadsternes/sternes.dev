@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sternes.vercel.app'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sternes.dev'
 
   const routes = ['', '/ai', '/privacy', '/terms'].map((route) => ({
     url: `${siteUrl}${route}`,
