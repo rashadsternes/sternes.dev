@@ -4,7 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio and service website for Rashad Sternes built with Next.js 16 (App Router), TypeScript, Tailwind CSS, and Framer Motion. Features AI-powered client fit assessment using Anthropic's Claude API.
+Portfolio and service website for **Sternes Digital** (DBA), operated by Rashad Sternes. Built with Next.js 16 (App Router), TypeScript, Tailwind CSS, and Framer Motion. Features AI-powered client fit assessment using Anthropic's Claude API.
+
+### Business Entity
+- **DBA**: Sternes Digital
+- **Domain**: sternes.dev
+- **Location**: Dallas, TX
+- **Contact**: support@sternes.dev
+- **DNS**: Squarespace (Google Domains nameservers) — do NOT move DNS
+- **Hosting**: Vercel
+- **Payments**: Stripe (setup in progress)
+
+### Branding Rules
+- **Nav & page titles**: Use "Sternes.dev" (shorter, memorable, matches domain, better for SEO)
+- **Footer, legal pages, metadata**: Use "Sternes Digital" (official business entity)
+- **Personal name**: Use "Rashad Sternes" only for personal context (alt text, AI page, API prompts)
 
 ## Development Commands
 
@@ -187,6 +201,13 @@ Check headers in API responses for rate limit info:
 - **Platform**: Vercel (automatic deployments)
 - **Framework**: Next.js 16 with App Router
 - **Environment**: Serverless functions for API routes
+
+## Documentation
+
+- `docs/PROJECT_HISTORY.md` — Session-by-session log of changes with rationale and lessons learned
+- `docs/ONLINE_BUSINESS_SETUP.md` — Checklist for getting a business online and ready for Stripe (exportable for client use)
+- `docs/SERVICE_OFFERINGS.md` — Service tiers and descriptions
+- `docs/PRICING_BROCHURE.md` — Pricing details
 
 ## AI Integration Details
 
